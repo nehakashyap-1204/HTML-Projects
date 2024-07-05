@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+       .background-image{
+        background-image: url(https://cdn.pixabay.com/photo/2017/03/14/11/39/perfume-2142817_1280.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 90vw;
+        height: 100vh;
+        margin: 10px auto;
+       }
+       .container{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+       }
+       .container h2{
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+       }
+       .container p{
+        line-height: 10px;
+        letter-spacing: .5px;
+       }
+       .container button{
+        height: 35px;
+        width: 100px;
+        border: none;
+        border-radius: 20px;
+       }
+       .container button:hover{
+        cursor: pointer;
+        background-color: lightblue;
+       }
+       .categories{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+       }
+       .categories p{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 400;
+       }
+       footer{
+        height: 50px;
+        background-color: #333;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding: 5px 0px;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="background-image"></div>
+        <div class="container">
+            <h2>Welcome to Our Website</h2>
+            <p>Discover Your Signature Scent.</p>
+            <button>Learn More</button>
+        </div>
+    </main>
+
+    <div class="categories">
+        <div class="men">
+            <img src="https://media.istockphoto.com/id/611628796/photo/successful-businessman-likes-perfume-scent.jpg?s=612x612&w=0&k=20&c=Clsd4JvXgoOtUBR93SEzK2U875FOsXJH3wmRE9eLCTk=" height="300px" width="400px">
+            <p>Men</p>
+        </div>
+        <div class="women">
+            <img src="https://media.istockphoto.com/id/184844747/photo/for-freshness.jpg?s=612x612&w=0&k=20&c=NV3tmn7BUotU9C0Fgyb-h458I8G5ke5-13q57j1j4Ak=" height="300px" width="400px">
+            <p>Women</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

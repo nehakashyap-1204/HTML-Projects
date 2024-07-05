@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+        .container h3{
+            font-size: 18px;
+        }
+        .container{
+            background-color: lightblue;
+            width: 100%;
+            height: 230px;
+            max-width: 550px;
+            padding: 10px;
+            margin: 200px auto;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,.75);
+        }
+        .date, .address, .description{
+            margin-bottom: 15px;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+        
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h3>
+            Welcome to the Annual Tech Conference 2024
+        </h3>
+        <p class="date">August 5, 2024, at 10:00 AM</p>
+        <p class="address">Tech Innovation Center, Sillicon Valley</p>
+        <p class="description">Join us for a day filled with insightful talks, networking opportunities, and the latest trends technology.</p>
+        <button>Join Now</button>
+    </main>
+</body>
+</html>

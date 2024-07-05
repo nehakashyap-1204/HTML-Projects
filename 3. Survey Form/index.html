@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey From</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .survey-from{
+        max-width: 700px;
+        border: 1px solid black;
+        border-radius: 10px;
+        /* height: 500px; */
+        padding: 20px 40px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .75);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select, textarea {
+        width: calc(100% - 20px);
+        padding: 8px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    label{
+        margin: 5px;
+    }
+    fieldset{
+        border: none;
+        margin: 20px;
+        padding: 5px;
+    }
+    legend{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    button{
+        height: 30px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 15px;
+        background-color: green;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: #1eb122;
+    }
+</style>
+<body>
+    <main>
+        <h1>Survey Form</h1>
+        <form class="survey-from">
+            <label for="firstname">First Name</label>
+            <input type="text" placeholder="Enter First Name" required>
+            <label for="lastname">Last Name</label>
+            <input type="text" placeholder="Enter Last Name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Enter Your Phone Number" required>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="150"
+            placeholder="Enter Your Age"  required>
+
+            <label for="feedback">Type of Feedback</label>
+            <select name="feedback" id="">
+                <option value="positive">Very Satisfied</option>
+                <option value="negative">Satisfied</option>
+                <option value="">Neutral</option>
+                <option value="">Dissatisfied</option>
+                <option value="">Very Dissatisfied</option>
+            </select>
+
+            <fieldset>
+                <legend>Services Used: </legend>
+                <input type="checkbox" name="services" id="s1">
+                <label for="s1">Roads</label><br>
+                <input type="checkbox" name="" id="s2">
+                <label for="s2">Hospitals</label><br>
+                <input type="checkbox" id="s3">
+                <label for="s3">Post Offices</label><br>
+                <input type="checkbox" name="services" id="s4">
+                <label for="s4">Schools</label><br>
+                <input type="checkbox" name="" id="s5">
+                <label for="s5">Municipal courts</label><br>
+                <input type="checkbox" id="s6">
+                <label for="s6">Transport</label><br>
+                <input type="checkbox" name="" id="s7">
+                <label for="s7">Fire departments</label><br>
+                <input type="checkbox" id="s8">
+                <label for="s8">Electricity</label>
+            </fieldset>
+
+            <label for="comments">Additional Comments</label>
+            <textarea name="comments" id="comments" rows="4"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
